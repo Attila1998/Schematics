@@ -1,0 +1,23 @@
+* C:\diak\HMR\Analog2\osszeado erosito.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Oct 16 11:37:52 2019
+
+
+
+** Analysis setup **
+.tran 50n 1000ns
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "osszeado erosito.net"
+.INC "osszeado erosito.als"
+
+
+.probe
+
+
+.END

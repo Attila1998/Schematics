@@ -1,0 +1,13 @@
+* Schematics Netlist *
+
+
+
+R_R1         $N_0001 0  1k  
+R_R2         $N_0002 0  1k  
+V_V2         $N_0002 0 DC 0 AC 0
++PULSE 100m -100m 0 1u 1u 500u 1m
+R_R3         $N_0003 0  1k  
+V_V1         $N_0001 0 DC 0 AC 0
++SIN 0 100m 1k 0 0 0
+V_V3         $N_0003 0 DC 0 AC 0
++PULSE 100m -100m 0 499u 499u 2u 1m

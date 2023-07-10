@@ -1,0 +1,23 @@
+* D:\Egyetem\Alanog eletronika\Analog II\Jelgeneratorok\Fordito erosito.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Oct 02 11:07:27 2019
+
+
+
+** Analysis setup **
+.tran 0ns 5ms 0 0.005m
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Fordito erosito.net"
+.INC "Fordito erosito.als"
+
+
+.probe
+
+
+.END

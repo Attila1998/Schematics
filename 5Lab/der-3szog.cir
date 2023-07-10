@@ -1,0 +1,23 @@
+* C:\Users\pal.janos.attila\Desktop\der-3szog.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Oct 30 11:38:36 2019
+
+
+
+** Analysis setup **
+.tran 0ns 1s 0 0.1m
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "der-3szog.net"
+.INC "der-3szog.als"
+
+
+.probe
+
+
+.END

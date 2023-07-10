@@ -1,0 +1,18 @@
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 10V
+V_V2         0 $N_0002 10V
+X_U1A         0 $N_0003 $N_0001 $N_0002 integ LM324
+R_R3         $N_0004 Be  1k  
+V_V3         $N_0005 0 10V
+V_V4         0 $N_0006 10V
+X_U2A         0 $N_0007 $N_0005 $N_0006 Der LM324
+V_V5         Be 0 DC 0 AC 0
++SIN 0 4Vpp 50 0 0 0
+R_R4         Der $N_0007  51k  
+C_C2         $N_0004 $N_0007  100n  
+R_R1         Be $N_0003  51k  
+C_C1         $N_0003 integ  100n  
+R_R2         $N_0003 integ  1Meg  

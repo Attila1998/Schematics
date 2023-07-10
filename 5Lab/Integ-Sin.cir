@@ -1,0 +1,23 @@
+* C:\Users\pal.janos.attila\Desktop\Integ-Sin.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Oct 30 11:19:29 2019
+
+
+
+** Analysis setup **
+.tran 0ns 1s 0 0.1m
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Integ-Sin.net"
+.INC "Integ-Sin.als"
+
+
+.probe
+
+
+.END

@@ -1,0 +1,23 @@
+* C:\Users\pal.janos.attila\Desktop\Integ-Der.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Oct 30 10:41:40 2019
+
+
+
+** Analysis setup **
+.tran 0ns 1s 0 0.1m
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Integ-Der.net"
+.INC "Integ-Der.als"
+
+
+.probe
+
+
+.END

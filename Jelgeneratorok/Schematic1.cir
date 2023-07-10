@@ -1,0 +1,23 @@
+* D:\Egyetem\Alanog eletronika\Analog II\Jelgeneratorok\Schematic1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Oct 02 10:50:57 2019
+
+
+
+** Analysis setup **
+.tran 0ns 5ms
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+.INC "Schematic1.als"
+
+
+.probe
+
+
+.END

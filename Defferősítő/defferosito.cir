@@ -1,0 +1,23 @@
+* C:\Diak\Sandor Matyas\defferosito.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Oct 09 11:18:45 2019
+
+
+
+** Analysis setup **
+.tran 0ns 1ms 0 100n
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "defferosito.net"
+.INC "defferosito.als"
+
+
+.probe
+
+
+.END
